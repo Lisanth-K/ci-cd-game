@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        KEY_PATH = "/var/lib/jenkins/jenkinkey.pem"
+        KEY_PATH = "/var/lib/jenkins/lis.pem"
     }
 
     stages {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/Nishok-Sasikumar/ci-cd-game'
+                git branch: 'main', url: 'https://github.com/Lisanth-K/ci-cd-game'
             }
         }
 
